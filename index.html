@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 10</title>
+    <link href="./css/all.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="home">
+        <div class="container ">
+            <h1 class=" text-center  my-4 position relative">Bookmarker</h1>
+            <div class="bookMarkBody ">
+                <div class="heading d-flex  justify-content-center align-items-center mt-4">
+                    <i class="fa-solid fa-bookmark fs-3 icon1"></i>
+                    <h2 class=" me-2 ms-2"> Bookmark your favorite sites</h2>
+                    <i class="fa-solid fa-bookmark fs-3 icon2"></i>
+                </div>
+
+                <div class="form my-3">
+                    <div class="mt-5 mb-4">
+                        <i class="fa-solid fa-book-bookmark text-dark fs-5"></i>
+                        <label for="Site Name" class="Site Name mb-1 text-dark  ms-1  fw-bold fs-6">Site Name</label>
+                        <input type="text" class="form-control text-dark" oninput="siteNameValidation()" id="siteName"
+                            placeholder="BookMark Name">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-link text-dark fs-5"></i>
+                        <label for="Site url" class="Site ulr mb-1 text-dark  fw-bold fs-6 ms-1">Site URL</label>
+                        <input type="text" class="form-control" oninput="siteUrlValidation()" id="siteUrl"
+                            placeholder="Website URL">
+                    </div>
+                    <div class="button d-flex justify-content-center align-items-center">
+                        <button class="mt-4 mb-2 " onclick="addBook()">Sumbit</button>
+                    </div>
+                </div>
+            </div>
+
+            <table class=" w-100 mt-4 bg-light text-center">
+                <thead class="border-0">
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="data"></tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <dialog id="alartDialog" class="m-auto border-0  rounded-3">
+        <div class="m-3">
+            <div class="top d-flex justify-content-between pt-4">
+                <div class="right-side">
+                    <i class="fa-solid fa-circle circle1 fs-5"></i>
+                    <i class="fa-solid fa-circle circle2 fs-5"></i>
+                    <i class="fa-solid fa-circle cricle3  fs-5"></i>
+                </div>
+                <div class="left-side">
+                    <button class="border-0 bg-transparent" onclick="closeDialog()"><i
+                        class="fa-solid fa-xmark fs-4"></i></button>
+                </div>
+
+            </div>
+            <p class=" mt-4 para">Site Name or Url is not valid, Please follow the </br>rules below :</p>
+            <ul class="list-unstyled">
+                <li class="mb-2">
+                    <i class="fa-regular fa-circle-right arrow"></i>&nbsp; Site name must contain at least 3 characters
+                </li>
+                <li><i class="fa-regular fa-circle-right arrow"></i>&nbsp; Site URL must be a valid one
+                </li>
+            </ul>
+        </div>
+    </dialog>
+
+
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

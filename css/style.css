@@ -1,0 +1,132 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F7ECDE;
+    
+}
+.container{
+    width: 90%
+}
+
+.container h1{
+  font-family: 'Pacifico';
+  color:#352e28;
+  font-size: 50px;
+  font-weight: 500;
+
+}
+
+ h1::before {
+  content: "";
+  position: absolute;
+  width:280px;
+  height:22px;
+  top: 60px;
+  background-color: #fec260;
+  z-index: -1;
+}
+h1:hover::before {
+  transition: 0.5s;
+  height: 40px; 
+  top: 40px;
+}
+.bookMarkBody{
+  border-width: 2px 0 2px 0;
+  border-color: #352e28;
+  border-style: dotted;
+  
+}
+.bookMarkBody h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.heading .icon1{
+  color:#3FA55C ;
+}
+.heading .icon2{
+ color:#B2AC49 ;
+}
+
+
+.button button{
+    width: 160px;
+    height:40px;
+    border: none;
+    color:white;
+    border-radius: 3px;
+    background-color: #d1512d;
+    
+}
+.button button:hover{
+    background-color: #BB4120;
+}
+.form-control:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  
+}
+
+ table{
+  font-weight: 700;
+}
+ th {
+  border-bottom: none; 
+}
+
+  table .btn{
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  
+
+}
+.btn1{
+  background-color: #9eb23b;
+  width: 85px;
+}
+.btn1:hover{
+  background-color: #6e8018;
+}
+.btn2{
+background-color: #eb1d36;
+width: 100px;
+}
+.btn2:hover{
+  background-color: #ba081d;
+}
+dialog{
+  width: 500px;
+}
+.para{
+  font-family: "Bree Serif", serif;
+  font-size: 21px;
+}
+.right-side .circle1{
+  color: #F15F5D;
+}
+.right-side .circle2{
+color: #FEBE2E;
+}
+.right-side .cricle3{
+color: #4DB748;
+}
+ul .arrow{
+  color: 
+  #BB4120;
+}
+ul li{
+  font-size: 18px;
+}
+
+
